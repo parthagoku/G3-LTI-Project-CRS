@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 
+import com.lti.bean.Admin;
 import com.lti.bean.Course;
 import com.lti.bean.Grade;
 import com.lti.bean.Student;
@@ -15,6 +16,7 @@ DummyData dd = new DummyData();
 	
 	public static Map<Student , LinkedList<Course> > stud_course = new HashMap<Student, LinkedList<Course>>();
 	public static Map<Student , String > stud_set_grade=new HashMap<Student, String>();
+	public static Map<Admin , String > admin_pass = new HashMap<Admin, String>();
 	
 	public void initialise() {
 	

@@ -7,7 +7,7 @@ package com.lti.bean;
  * @author user254
  *
  */
-public class Student extends User{
+public class Student {
 
 	private int studentId;
 	private String branch;

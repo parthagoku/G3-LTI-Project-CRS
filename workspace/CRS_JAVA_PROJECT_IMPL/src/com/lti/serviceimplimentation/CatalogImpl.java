@@ -38,7 +38,7 @@ public class CatalogImpl implements CatalogInterface {
 		{
 			if (c_id.equals(clist.get(i).getCourseCode()))
 			{
-				System.out.println("hii");
+				//System.out.println("hii");
 				clist.remove(i);
 				System.out.println("Removed Successfully!");
 				viewCourseDetails();

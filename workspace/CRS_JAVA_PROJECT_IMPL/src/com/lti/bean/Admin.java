@@ -9,7 +9,13 @@ import java.util.Date;
  * @author user254
  *
  */
-public class Admin {
+public class Admin extends User{
+
+	public Admin(int uid , String name , String role)
+	{
+		super(uid , name , role);
+		
+	}
 
 	private Date doj;
 
@@ -27,12 +33,10 @@ public class Admin {
 		this.doj = doj;
 	}
 
+	
+
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
-	@Override
-	public String toString() {
-		return "Admin [doj=" + doj + "]";
-	}
 	
 }

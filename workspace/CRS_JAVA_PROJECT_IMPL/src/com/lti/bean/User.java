@@ -8,6 +8,12 @@ public class User {
 	/**
 	 * @return the userId
 	 */
+	public User(int userId, String name, String role) {
+		//super();
+		this.userId = userId;
+		this.name = name;
+		this.role = role;
+	}
 	public int getUserId() {
 		return userId;
 	}

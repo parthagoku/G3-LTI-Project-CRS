@@ -8,31 +8,44 @@ import java.util.Scanner;
 import com.lti.bean.Course;
 import com.lti.dummydata.DummyData;
 
-public class CrsApplication {
+public class CRSApplication {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		while(true)
+		{
 		System.out.println("=====================CRS Application Portal==========================");
 		System.out.println("=====================================================================");
-		System.out.println("Enter your Designation to enter the portal");
+		System.out.println("Enter your Designation to enter the portal or type Exit to exit.");
 		Scanner choice1=new Scanner(System.in);
 		String option=choice1.nextLine();
 		ProfApp pf=new ProfApp();
 		StudentApp sa=new StudentApp();
-		if(option.equals("Professor"))
+		AdminApp aa=new AdminApp();
+		if(option.equalsIgnoreCase("Professor"))
 		{
 			
 			pf.profOpp();
 		}
 		
-		if(option.equals("Student"))
+		else if(option.equalsIgnoreCase("Student"))
 		{
 			sa.studentOpp();
 		}
+		else if(option.equalsIgnoreCase("Admin"))
+		{
+			aa.adminOpp();
+		}
+		else if(option.equalsIgnoreCase("Exit"))
+		{
+			System.out.println("Logged OFF.....");
+			break;
+		}
+		}
 		
-		DummyData dd = new DummyData();
+		/*DummyData dd = new DummyData();
 		// entry point
 		while(true) {
 			Scanner sc = new Scanner(System.in);
@@ -85,7 +98,7 @@ public class CrsApplication {
 			
 		}
 		
-
+*/
 
 	}
 	

@@ -36,7 +36,7 @@ public class StudentInterfaceImpl implements StudentInterface {
 			Iterator<Student> itr  = students.iterator();
 			Set<Integer> student_ids = new HashSet<Integer>();
 			while(itr.hasNext()) {
-				System.out.println("hiii....");
+				//System.out.println("hiii....");
 				Student stud_temp=itr.next();
 				if(stud_temp.getStudentId()==s_id)
 				{
