@@ -15,6 +15,7 @@ public class CrsApplication {
 	 */
 	public static void main(String[] args) {
 		System.out.println("=====================CRS Application Portal==========================");
+		System.out.println("=====================================================================");
 		System.out.println("Enter your Designation to enter the portal");
 		Scanner choice1=new Scanner(System.in);
 		String option=choice1.nextLine();

@@ -9,6 +9,7 @@ import com.lti.bean.Professor;
 import com.lti.bean.Student;
 
 public class DummyData {
+
 	public static List<Student> students = new LinkedList<Student>();
 	public static List<Student> students_course = new LinkedList<Student>();
 	public static List<Professor> profs = new LinkedList<Professor>();
